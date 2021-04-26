@@ -24,3 +24,7 @@ open Eq {{...}} public
 
 data <U> {l : Level} : Set l where
   unit : <U>
+
+data Maybe (A : Set l) : Set l where
+  just : A -> Maybe A
+  nothing : Maybe A
